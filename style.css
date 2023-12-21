@@ -1,0 +1,204 @@
+.flexContainer,.awesomeDriveinformationrmation,.awesomeDriveInfo,.contactUsDesk,.info,.oneWay,.icons{
+    display: flex;
+}
+.flexContainer{
+    justify-content: space-evenly;
+}
+.drivingImg {
+    width: 25%;
+}
+.instructions {
+    width: 45%;
+}
+.bookingCharge {
+    display: flex;
+    margin-top: 3rem;
+    height: 15rem;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 15%;
+}
+.drivingImg>img{
+    width: -webkit-fill-available;
+    height: 100%;
+}
+.safetyIcons{
+    width: 60%;
+}
+.informationDesk{
+    width: 47%;
+    line-height: 1;
+}
+.awesomeDriveInfo{
+    width: 100%;
+    height: 12rem;
+}
+.bookingCharge img{
+    width: 10%;
+    margin-right: 1rem;
+}
+.awesomeDriveImg>img{
+    width: 50%;
+}
+.icons>img{
+    width: 7%;
+    height: 34px;
+    border: 2px solid #c6c0c0;
+    border-radius: 35px;
+    padding: 6px 22px;
+}
+/* .mask{
+    width: 12%;
+    height: 128px;
+} */
+.informationDesk, .bookingCharge p{
+    font-family: system-ui;
+    font-size: 20px;
+}
+.info>img{
+    width: 25px;
+}
+/* .info p{
+    margin: 0;
+} */
+.awesomeDriveImg {
+    display: grid;
+    align-items: center;
+    width: 53%;
+}
+.bookingCharge h5{
+    font-family: system-ui;
+    font-size: 25px;
+    margin: 0;
+}
+.icons{
+    align-items: baseline;
+    justify-content: space-between;
+}
+.mobile,.protection{
+    /* height: 80px; */
+}
+.safetyIcons p{
+    font-family: sans-serif;
+    font-size: 26px;
+    opacity: 0.7;
+}
+.contactUsDesk img{
+    width: 10%;
+}
+.call{
+    background-color: #ff9800;
+    text-align: center;
+    padding: 15px 0px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.whatsapp{
+    background-color: #55c34a;
+    text-align: center;
+    padding: 15px 0px;
+}
+.address{
+    background: gray;
+    text-align: center;
+    padding: 15px 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.informationMobile,.contactUsMobile,.proMobile{
+    display: none;
+}
+@media (min-width:769px) and (max-width:1025px){
+    .drivingImg {
+        width: 40%;
+    }
+    .informationDesk {
+        width: 64%;
+        line-height: 1;
+    }
+ }
+/* media query */
+@media only screen and (max-width: 768px) {
+    body{
+        margin: 0;
+    }
+    .driveSkills{
+        display: flex;
+        margin-left: 1rem;   
+    }
+    .informationDesk,.proDesktop{
+        display: none;
+    }
+    .informationMobile,.proMobile{
+        display: block;
+    }
+    .flexContainer{
+        display: block;
+        overflow: hidden;
+    }
+    .drivingImg>img {
+        width: inherit;
+    }
+    .drivingImg,.instructions {
+        width: 100%;
+    }
+    .safetyIcons, .awesomeDriveInfo{
+        width: 50%;
+    }
+    .awesomeDriveImg{
+        height: 40%;
+        display: flex;
+        align-items: center;
+        margin-left: 49px;
+    }
+    .awesomeDriveImg>img {
+        width: 100%;
+    }
+    .safetyIcons p {
+        font-size: 20px;
+        opacity: 0.9;
+    }
+    .icons>img {
+        margin-right: 2%;
+        width: 17%;
+        height: 23px;
+        padding: 9px 13px;
+    }
+    .bookingCharge{
+        width: 100%;
+        flex-direction: row;
+        height: 7rem;
+        margin-left: 1rem;
+        margin-top: -40px;
+    }
+    .informationMobile{
+        font-family: system-ui;
+        font-size: 20px;
+        line-height: 5px;
+    }
+    .contactUsDesk{
+        display: none;
+    }
+    .contactUsMobile{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contactUsMobile img{
+        width: 30%;
+        position: relative;
+        bottom: 7px;
+    }
+    .call,.address,.whatsapp{
+        height: 62px;
+        width: 33%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+@media only screen and (min-width:321px) and (max-width:450px){
+    .call, .address, .whatsapp {
+        height: 41px;
+        width: 33%;
+    }
+}
+    
